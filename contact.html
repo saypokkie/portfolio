@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pokkie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/pfp.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+</head>
+
+<body>
+    <div class="container" data-scroll-container>
+        <header>
+            <div class="header-content">
+                <img src="img/pfp.png" alt="Profile Picture" class="profile-pic">
+                <h1 class="reenie-beanie-regular header-title">Pokkie's Gallery</h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="terms.html">Store</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li class="selected"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://twitter.com/saypokkie" target="_blank"><img src="img/tt.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/saypokkie/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+            <a href="https://www.patreon.com/saypokkie" target="_blank"><img src="img/patreon.png" alt="Patreon"></a>
+        </div>
+        <main>
+            <section class="contact">
+                <p style="text-align: center;" id="mailtoher">Feel free to reach out to me through any of the social
+                    media links above or via email at <a
+                        href="mailto:saypokkiecontact@gmail.com"><b>saypokkiecontact@gmail.com</b></a></p>
+                <form class="contact-form">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name:">
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email:">
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <div class="donation-section">
+                <h3>Donations</h3>
+                <p>If you would like to support my work, you can make a donation through the following options:</p>
+                <div class="donation-buttons">
+                    <a href="#" class="donation-button" onclick="showNotAvailableAlert()">
+                        <img src="img/paypal.png" alt="PayPal">
+                        Donate with PayPal
+                    </a>
+                    <a href="https://livepix.gg/saypokkie" class="donation-button" target="_blank">
+                        <img src="img/livepix.png" alt="LivePix">
+                        Donate with LivePix
+                    </a>                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Copyright ℗ 2024 - All rights reserved - Pokkie's Portfolio</p>
+        </footer>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img">
+            <div class="info-box">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-date"></p>
+                <div>
+                    <h3>About:</h3>
+                    <p id="lightbox-about"></p>
+                </div>
+                <div>
+                    <h3>History:</h3>
+                    <p id="lightbox-history"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/elevatezoom-plus@1.1.21/jquery.elevatezoom.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("KRUSYLuWd9YJygxVv"); // Substitua pelo seu User ID do EmailJS
+        })();
+    </script>
+
+</body>
+
+</html>

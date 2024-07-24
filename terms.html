@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Pokkie - Terms and Conditions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/pfp.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css">
+</head>
+
+<body>
+    <div class="container" data-scroll-container>
+        <header>
+            <div class="header-content">
+                <img src="img/pfp.png" alt="Profile Picture" class="profile-pic">
+                <h1 class="reenie-beanie-regular header-title">Pokkie's Gallery</h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="selected"><a href="terms.html">Store</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://twitter.com/saypokkie" target="_blank"><img src="img/tt.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/saypokkie/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+            <a href="https://www.patreon.com/saypokkie" target="_blank"><img src="img/patreon.png" alt="Patreon"></a>
+        </div>
+        <main>
+            <section class="terms-section">
+                <h2 class="terms-title">TERMS OF SERVICE</h2>
+                <div class="terms-block">
+                    <div class="separator3"></div>
+                    <h3>DISCLAIMER:</h3>
+                    <p>By commissioning my services, you agree to the terms below. Please read carefully and clarify any
+                        doubts before placing your order. Failure to comply with these terms will result in the
+                        cancellation of the commission, and future collaborations may be denied.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>COPYRIGHT AND USAGE:</h3>
+                    <p>By commissioning a piece, you are purchasing my artistic services. Copyright remains with me,
+                        allowing the use of the work for self-promotion and portfolio purposes. If you wish to keep the
+                        commission private, an additional 25% fee will be applied. The use of the artwork on
+                        non-commercial platforms, such as icons, banners, etc., is allowed with proper credit. For
+                        commercial use, please inquire about acquiring commercial rights.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>WORK PROCESS:</h3>
+                    <p>Before contacting me, review the Terms of Service and prices in my portfolio. Provide detailed
+                        project references. Updates will be provided at key stages (sketch, base colors, final
+                        rendering, completion). Delivery times may vary depending on project complexity and my
+                        availability. Urgent deadlines are subject to an additional fee.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>REVISIONS/CHANGES</h3>
+                    <p>Significant revisions are allowed only during the sketch phase. After this stage, minor changes,
+                        such as color adjustments, are accepted. Any significant rework will incur an additional fee.
+                    </p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>PAYMENT</h3>
+                    <p>I accept payments via PayPal or Pix. A partial payment of 50% is required before starting the
+                        artwork, with the remaining balance due before final delivery. Additional costs for extra
+                        requests must be settled before final delivery.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>REFUND POLICY</h3>
+                    <p>Refund requests are accepted within one week of initial payment, with full refunds available only
+                        if work has not yet started. After the sketch is completed, a 50% refund is available, along
+                        with the produced material up to that point.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>YOUT RIGHTS</h3>
+                    <p>You have the right to use the artwork for personal purposes and share it on your social media,
+                        provided you credit me. Modifying the artwork, claiming authorship, using it in AI generators,
+                        and producing merchandise with the artwork are not allowed without acquiring commercial rights.
+                    </p>
+                </div>
+                <div class="separator3"></div>
+                <div class="terms-block">
+                    <h3>GENERAL PROVISIONS</h3>
+                    <p>I reserve the right to refuse a commission without disclosing reasons. If the client violates the
+                        terms, is disrespectful, +18 and NSFW, or causes discomfort, I may cancel the commission, offering a refund
+                        proportional to the work done. Failure to comply with these terms will result in the loss of
+                        rights to the artwork. Ensure you understand all terms before proceeding with your order.</p>
+                </div>
+                <div class="separator3"></div>
+                <div class="button-container">
+                    <button class="decline-button" onclick="location.href='index.html'">I Disagree</button>
+                    <button class="accept-button" onclick="location.href='store.html'">I Understand</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Copyright ℗ 2024 - All rights reserved - Pokkie's Portfolio</p>
+        </footer>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img">
+            <div class="info-box">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-date"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/elevatezoom-plus@1.1.21/jquery.elevatezoom.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
